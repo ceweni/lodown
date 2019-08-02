@@ -1,0 +1,22 @@
+{
+  "name": "lodown-ceweni",
+  "version": "1.0.0",
+  "description": "my first npm package",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "instanbul cover _mocha -- test/ -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceweni/lodown.git"
+  },
+  "author": "Chukwunonso Eweni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceweni/lodown/issues"
+  },
+  "homepage": "https://github.com/ceweni/lodown#readme"
+}

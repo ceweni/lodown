@@ -270,7 +270,9 @@ module.exports.pluck = pluck;
 /** 
  * every: Designed to loop over a collection, Array or Object, and calls the function
  * argument on the elements in the array and if the return value from that function is 
- * true/ or false, then our every function will return true or false. 
+ * true/ or false, then our every function will return true or false. All elements in the
+ * array passing through the calling function must return through for every function to 
+ * return true. Anyone of the elements returning false will set every function to false.
  * 
  * @param {Array or Object} collection: The collection over which to iterate.
  * @param {Function} test: The Function to be applied to each value in the 
@@ -301,9 +303,10 @@ function every (collection, test){
 module.exports.every = every;
 
 /** 
- * some: Designed to loop over a collection, Array or Object, and and calls the function
+ * some: Designed to loop over a collection, Array or Object, and calls the function
  * argument on the elements in the array and if the return value from that function is 
- * true/ or false, then our every function will return true or false.
+ * true for any element in the array, then our some function will return true. The some function
+ * only returns false when all elements in the array passed through the calling function returns false.
  * 
  * @param {Array or Object} collection: The collection over which to iterate.
  * @param {Function} test: The Function to be applied to each value in the 
